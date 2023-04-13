@@ -45,6 +45,8 @@
   .navbar-nav {
     justify-content: center;
     text-align: center;
+    padding: 2rem 0;
+
   }
   .navigation .navbar-nav .nav-item .nav-link
   {
