@@ -811,6 +811,7 @@ color: var(--text-grey);
 #contact .contact-form .form-group input,
 #contact .contact-form .form-group textarea
 {
+   border-radius:2px;
   font-size: 1.3rem;
   font-weight: 500;
   color: var(--text-grey);
@@ -826,12 +827,14 @@ color: var(--text-grey);
 {
   height: 15rem;
   resize: none;
+  border-radius:2px;
 }
 
 #contact .contact-form button
 {
   font-size: 1.7rem;
   font-weight: 500;
+   border-radius:2px;
   padding: .6rem 3.2rem;
   background-color: var(--bg-danger);
   color: var(--text-white);
