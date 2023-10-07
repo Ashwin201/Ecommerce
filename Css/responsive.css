@@ -1,0 +1,504 @@
+@media(max-width:1030px)
+{
+  /* Home css */
+  
+.home-banner1
+{
+    background-position:65% center;
+}
+.home-banner2
+{
+  background-position:65% center;
+
+}
+
+.home-banner-text
+{
+   
+    transform: translate(-80%, -50%);
+}
+
+
+
+/* home offer section */
+
+.offers .offer-box .offer-info h1 {
+  font-size: 3rem;
+ 
+}
+.offers .offer-box .offer-info p {
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+}
+
+.offers .offer-box .offer-info button {
+  font-size: 1.5rem;
+  padding: .2rem .4rem;
+  
+}
+}
+
+
+/* For small desktop */
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 0;
+
+  }
+  .navigation .navbar-nav .nav-item .nav-link
+  {
+    margin: .5rem 0;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+
+
+
+
+
+  /* home section */
+  .offers .offer-box .offer-info h1 {
+    font-size: 3rem;
+   
+  }
+  .offers .offer-box .offer-info p {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+  
+  .offers .offer-box .offer-info button {
+    font-size: 1.5rem;
+    padding: .2rem .4rem;
+    
+  }
+
+
+
+  /* Product section*/
+  #products .upto-sale .upto-txt p{
+    font-size: 2rem;
+    
+  }
+
+
+
+  /* Special Section */
+  #special .content {
+   margin-bottom: 5rem;
+  }
+
+
+
+
+  /* Testimonial section */
+  
+
+
+#testimonial .carousel-control-prev-icon
+{
+  position: absolute;
+  left: 0rem;
+  top: 6rem;
+}
+
+#testimonial .carousel-control-next-icon
+{
+  position: absolute;
+  right: 0;
+  top: 6rem;
+
+}
+
+
+
+/* Contact Section */
+#contact .contact-info
+{
+  padding-bottom: 6rem;
+}
+
+
+#contact .contact-form 
+{
+  padding-bottom: 3rem;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:767px)
+{
+  /* Home css */
+  
+.home-banner1
+{
+    background-position:60% center;
+}
+
+.home-banner2
+{
+  background-position:60% center;
+
+}
+
+
+.home-banner-text h1
+{
+font-size: 3.5rem;
+letter-spacing: 1px;
+}
+.home-banner-text h2
+{
+font-size: 2rem;
+letter-spacing: normal;
+}
+.btn-danger
+{
+  font-size: 1.8rem;
+  padding: .3rem .8rem;
+
+}
+#home .slider-icon
+{
+  display: none;
+   
+}
+
+
+/* home offer section */
+
+.offers .offer-box .offer-info h1 {
+  font-size: 3rem;
+ 
+}
+.offers .offer-box .offer-info p {
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+}
+
+.offers .offer-box .offer-info button {
+  font-size: 1.5rem;
+  padding: .2rem .4rem;
+  
+}
+
+
+
+
+
+
+/* Product Section */
+#products
+{
+    padding-top: 4rem;
+}
+#products .title
+{
+  color: var(--text-black);
+  margin-bottom: 2rem;
+  font-size: 3.5rem;
+
+}
+
+
+
+#products .upto-sale .upto-txt p{
+  font-size: 1.2rem;
+  letter-spacing: .1px;
+  
+}
+
+
+
+
+/* Special section */
+#special .title
+{
+  
+  font-size: 3.5rem;
+
+}
+#special .content .countdown-counter li  {
+ width: 22%;
+}
+#special .content .countdown-counter li span{
+  font-size:2.5rem;
+  font-weight:600;
+}
+#special .content .countdown-counter li em {
+  font-size: 1.6rem;
+  font-weight:600;
+  text-align: center;
+
+}
+
+/* testimonial ::selection */
+#testimonial .title
+{
+  
+  font-size: 3.5rem;
+
+}
+#testimonial .testimonial-content
+{
+  height: auto;
+  padding-bottom: 3rem;
+  width: 100%;
+}
+#testimonial .carousel .carousel-indicators [data-bs-target] {
+
+  display: none;
+
+}
+
+
+/*contact section*/
+#contact .title
+{
+  
+  font-size: 3.5rem;
+
+}
+
+#contact .contact-info 
+{
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+}
+
+
+
+
+
+@media(max-width:450px)
+{
+
+
+  .btn {
+    font-size: 1.3rem;
+ 
+  }
+  /* Navbar section */
+
+  .navigation .navbar-nav .nav-item .nav-link
+  {
+    margin: .7rem 0;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    font-weight: 600;
+  }
+
+  .navigation .navbar-brand img {
+    width: 12rem;
+    height: auto;
+    border: none;
+    outline: none;
+  }
+  /* Home css */
+  
+
+ 
+
+.home-banner-text h1
+{
+font-size: 3rem;
+letter-spacing: 1px;
+}
+.home-banner-text h2
+{
+font-size: 1.8rem;
+letter-spacing: normal;
+}
+.btn-danger
+{
+  font-size: 1.6rem;
+  padding: .3rem .8rem;
+
+}
+
+/* home offer section */
+
+.offers .offer-box .offer-info h1 {
+  font-size: 3rem;
+ 
+}
+.offers .offer-box .offer-info p {
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+}
+
+.offers .offer-box .offer-info button {
+  font-size: 1.5rem;
+  padding: .2rem .4rem;
+  
+}
+
+
+
+/* Product Section */
+#products .title
+{
+  
+  font-size: 2.5rem;
+
+}
+#products .title::before
+{
+  content: "";
+  width: 10rem;
+
+}
+
+#products .upto-sale .upto-txt p{
+  font-size: 1rem;
+  letter-spacing: .1px;
+  
+}
+
+
+/* Special section */
+
+#special .title
+{
+  
+  font-size: 2.5rem;
+
+}
+#special .title::before
+{
+  content: "";
+  width: 10rem;
+
+}
+#special .content h2{
+  font-size: 2.1rem;
+}
+
+
+
+#special .content .countdown-counter li  {
+  width: 20%;
+  padding: .8rem ;
+
+ }
+ #special .content .countdown-counter li span{
+   font-size:2rem;
+   font-weight:600;
+ }
+ #special .content .countdown-counter li em {
+   font-size: 1.3rem;
+   font-weight:600;
+   text-align: center;
+   align-items: center;
+ 
+ }
+
+
+ /* Testimonial Section */
+
+ #testimonial .title
+{
+ font-size: 2.5rem;
+
+}
+
+#testimonial .title::before
+{
+  content: "";
+  width: 10rem;
+ 
+
+}
+#testimonial .carousel-item .testimonial-content img{
+  width: 12rem;
+  height: 12rem;
+}
+
+#testimonial .carousel-item .testimonial-content h4
+{
+  font-size: 1.7rem;
+
+
+}
+
+#testimonial .carousel-item .testimonial-content span{
+  font-size: 1.5rem;
+
+}
+
+
+
+ /* Contact Section */
+ #contact
+ {
+   padding-top: 5rem;
+   background-color: var(--bg-light-white);
+   padding-bottom: 6rem;
+ }
+ #contact .title
+ {
+  font-size: 2.5rem;
+ }
+
+ #contact .title::before
+ {
+   content: "";
+   width: 8.5rem;
+ }
+
+ #contact .contact-info h3{
+  font-size: 2rem;
+}
+
+
+#contact .contact-info p{
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: .1px;
+  
+}
+#contact .contact-info p i{
+  font-size: 2rem;
+}
+
+ #contact .contact-form h3{
+  font-size: 2rem;
+
+}
+
+
+
+
+
+/* Footer Scetion */
+.footer p{
+  font-size: 1.2rem;
+}
+
+
+.footer #scrollup a i{
+
+  font-size: 2.5rem;
+ 
+}
+}
+

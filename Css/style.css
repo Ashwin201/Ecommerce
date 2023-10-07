@@ -1,0 +1,761 @@
+/* p tag= 15px
+h1 tag= 40px
+h3 tag= 25px */
+@import url("https://fonts.googleapis.com/css2?family=Alegreya&family=Alegreya+Sans:wght@100&family=Alkalami&family=Archivo+Black&family=Baloo+Tamma+2&family=Beau+Rivage&family=Oswald:wght@200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@1,700&family=Secular+One&family=Ubuntu:wght@300&display=swap");
+
+/* Code to remove blue highlight when tapping links in mobile */
+input,
+textarea,
+button,
+span,
+div,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a:focus,
+a:visited,
+a:active,
+span:focus,
+span:visited,
+span:active,
+div:focus,
+div:visited,
+div:active {
+  outline: none;
+}
+
+/* Custom Css for Scroll bars */
+::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: grey;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--bg-danger);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "sans-sarif";
+  scroll-behavior: smooth;
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: var(--bg-white);
+  color: var(--text-black);
+  transition: 0.5s ease-in-out;
+}
+html {
+  box-shadow: none;
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  transition: 1s;
+}
+/* General; css */
+
+:root {
+  /* background color */
+  --bg-danger: #f63440;
+  --bg-white: white;
+  --bg-light-white: rgb(226, 223, 223);
+
+  /* text colors */
+  --text-danger: #f63440;
+  --text-black: black;
+  --text-white: white;
+  --text-grey: grey;
+  --text-dark-grey: rgb(80, 79, 79);
+}
+
+/* Custom Css */
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--text-white);
+  border: 2px solid var(--bg-danger);
+  background-color: var(--bg-danger);
+  transition: 0.4s ease-in-out;
+}
+.btn:hover {
+  background-color: transparent;
+  color: var(--text-danger);
+  border: 2px solid var(--text-danger);
+}
+
+/* Navbar section starts */
+.navigation {
+}
+.navbar {
+  background-color: var(--bg-white);
+}
+.navigation .navbar-brand img {
+  width: 15rem;
+  height: auto;
+  border: none;
+  outline: none;
+}
+
+.navigation .navbar-toggler {
+  color: var(--bg-white);
+  border: 2px solid var(--bg-white);
+}
+
+.navigation .navbar-toggler:hover {
+  color: var(--bg-white);
+  outline: none;
+}
+
+.navigation .navbar-toggler i {
+  font-size: 2.5rem;
+  color: var(--text-grey);
+}
+
+.navigation .navbar-toggler i:hover {
+  font-size: 2.5rem;
+  color: var(--text-danger);
+}
+.navigation .navbar-nav .nav-item .active {
+  color: var(--text-danger);
+}
+.navigation .navbar-nav .nav-item .nav-link {
+  padding: 0.8rem 1.5rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.navigation .navbar-nav .nav-item .nav-link:hover,
+.navigation .navbar-nav .nav-item .nav-link:hover .active {
+  color: var(--text-danger);
+}
+
+/* Home Section */
+
+.home-banner1 {
+  background: url("../Images/slide2.webp");
+  background-repeat: no-repeat;
+  min-height: 65rem;
+
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  top: 3.5rem;
+}
+
+.home-banner2 {
+  background: url("../Images/slide1.webp");
+  background-repeat: no-repeat;
+  min-height: 65rem;
+  top: 3.5rem;
+
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.home-banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-110%, -50%);
+}
+
+.home-banner-text h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.home-banner-text h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+
+#home .carousel .carousel-indicators [data-bs-target] {
+  height: 4px;
+  width: 4rem;
+  background-color: var(--bg-danger);
+}
+
+#home .slider-icon {
+  color: var(--text-danger);
+  font-size: 3rem;
+}
+
+/* Offer section */
+
+.offers {
+  padding-top: 7rem;
+}
+.offers .offer-box .offer-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.offers .offer-box .offer-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  z-index: 2;
+  display: block;
+  width: 50%;
+  height: 100%;
+  background: -webkit-linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  transform: skewX(-25deg);
+}
+
+.offers .offer-box .offer-img img {
+  transform: scale(1.2);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.offers .offer-box:hover .offer-img::before {
+  animation: shine 1s;
+}
+@keyframes shine {
+  100% {
+    left: 150%;
+  }
+}
+
+.offers .offer-effect::before {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0, 0.3);
+}
+.offers .offer-box .offer-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.offers .offer-box .offer-info h1 {
+  color: var(--text-white);
+  font-size: 4rem;
+  font-weight: 500;
+}
+.offers .offer-box .offer-info p {
+  color: var(--text-white);
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.offers .offer-box .offer-info button {
+  color: var(--text-white);
+  font-size: 1.5rem;
+  border: 2px solid var(--bg-danger);
+  padding: 0.4rem 0.8rem;
+  font-weight: 400;
+  transition: 0.3s ease-in-out;
+}
+
+/* Products Section */
+#products {
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+}
+#products .title {
+  color: var(--text-black);
+  margin-bottom: 4rem;
+  font-size: 4rem;
+}
+#products .title::before {
+  content: "";
+  position: absolute;
+  width: 15rem;
+  height: 3px;
+  bottom: 1.3rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1.5px;
+  background-color: var(--bg-danger);
+}
+#products .product-card {
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+#products .product-card .product-img .sale {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 1.4rem;
+  color: var(--text-white);
+  background-color: var(--bg-danger);
+  border-radius: 3px;
+  padding: 0px 7px;
+  font-weight: 500;
+  z-index: 100;
+}
+
+#products .product-card .product-img img {
+  transition: 0.5s ease-in-out;
+}
+#products .product-card .product-img .img-secondary {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#products .product-card .product-img:hover .img-secondary {
+  opacity: 1;
+}
+
+#products h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  color: var(--text-danger);
+  width: 100%;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+#products .product-info {
+  padding-top: 1rem;
+}
+#products .product-info h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+#products .product-info p {
+  font-size: 1.3rem;
+  letter-spacing: 0.5px;
+  padding-top: 3px;
+}
+
+#products .product-info p del {
+  font-size: 1.3rem;
+  letter-spacing: 0.5px;
+  color: var(--text-grey);
+}
+
+#products .product-info .stars span {
+  font-size: 1rem;
+  padding-top: 3px;
+}
+#products .product-info .stars .active {
+  color: var(--text-danger);
+}
+
+#products .product-info .btns .btn {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  transition: 0.3s ease-in-out;
+  padding: 2px 1.5rem;
+}
+
+#products .product-info .btns .btn:hover {
+  color: var(--text-black);
+}
+
+#products .upto-sale {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+
+  position: relative;
+}
+
+#products .upto-sale::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.2);
+  z-index: 2;
+  cursor: pointer;
+  transition: 0.5s t;
+}
+
+#products .upto-sale .upto-txt p {
+  font-size: 2.5rem;
+  z-index: 3;
+  font-weight: 500;
+  color: var(--text-white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  letter-spacing: 0.7px;
+  transform: translate(-50%, -50%);
+}
+
+#products .upto-sale span {
+  position: absolute;
+  top: 0;
+  left: -110%;
+  width: 20%;
+  height: 100%;
+  background: rgb(255, 255, 255, 0.2);
+  transition: 0.5s;
+  transform: skew(-25deg);
+}
+
+#products .upto-sale:hover span {
+  left: 110%;
+}
+
+/* Special Section starts */
+
+#special {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: var(--bg-light-white);
+}
+#special .title {
+  color: var(--text-black);
+  margin-bottom: 6rem;
+  font-size: 4rem;
+  text-align: center;
+}
+#special .title::before {
+  content: "";
+  position: absolute;
+  width: 15rem;
+  height: 3px;
+  bottom: -1.3rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1.5px;
+  background-color: var(--bg-danger);
+}
+
+#special .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#special .content h2 {
+  font-size: 3rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+#special .content p {
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+  font-weight: 400;
+
+  letter-spacing: 0.2px;
+}
+
+#special .content .countdown-counter {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#special .content .countdown-counter li {
+  display: inline-block;
+
+  text-align: center;
+  width: 15%;
+  background-color: var(--bg-white);
+  padding: 2rem;
+  gap: 5rem;
+}
+
+#special .content .countdown-counter li span {
+  font-size: 3rem;
+  font-weight: 600;
+}
+#special .content .countdown-counter li em {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+#special .content .countdown-price {
+  font-size: 1.7rem;
+  font-weight: 500;
+  padding: 1.8rem 0;
+}
+
+#special .content .countdown-price del {
+  color: var(--text-grey);
+}
+
+#special .content .btns a {
+  font-size: 1.5rem;
+  transition: 0.3s ease-in-out;
+  padding: 5px 1.5rem;
+}
+
+#special .content .btns a:hover {
+  color: var(--text-black);
+}
+
+#special .images {
+  position: relative;
+
+  transition: 0.5s;
+  z-index: 2;
+  cursor: pointer;
+}
+
+#special .images .secondary-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#special .images:hover .secondary-img {
+  opacity: 1;
+  z-index: 3;
+}
+
+#special .images .sale {
+  position: absolute;
+  top: 5px;
+  left: 1.5rem;
+  font-size: 1.4rem;
+  color: var(--text-white);
+  background-color: var(--bg-danger);
+  border-radius: 3px;
+  padding: 0px 7px;
+  font-weight: 500;
+  opacity: 1;
+  z-index: 5;
+}
+
+/* Testimonial section */
+#testimonial {
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+}
+#testimonial .title {
+  color: var(--text-black);
+  margin-bottom: 6rem;
+  font-size: 4rem;
+  text-align: center;
+}
+#testimonial .title::before {
+  content: "";
+  position: absolute;
+  width: 15rem;
+  height: 3px;
+  bottom: -1.3rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1.5px;
+  background-color: var(--bg-danger);
+}
+
+#testimonial .testimonial-content {
+  height: 60vh;
+  width: 100%;
+}
+#testimonial .carousel-item .testimonial-content img {
+  border-radius: 50%;
+  width: 15rem;
+  height: 15rem;
+  margin-bottom: 1.5rem;
+}
+
+#testimonial .carousel-item .testimonial-content h4 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+#testimonial .carousel-item .testimonial-content span {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--text-grey);
+}
+
+#testimonial .carousel-item .testimonial-content p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  position: relative;
+  color: var(--text-grey);
+}
+
+#testimonial .carousel .carousel-indicators [data-bs-target] {
+  height: 4px;
+  width: 4rem;
+  background-color: var(--bg-danger);
+}
+
+#testimonial .carousel-control-prev-icon,
+#testimonial .carousel-control-next-icon {
+  background-color: transparent;
+}
+#testimonial .slider-icon {
+  color: var(--text-danger);
+  font-size: 2.5rem;
+}
+
+#testimonial .carousel-control-prev-icon {
+  position: absolute;
+  left: -10rem;
+}
+
+#testimonial .carousel-control-next-icon {
+  position: absolute;
+  right: -10rem;
+}
+
+/* Contact Section */
+#contact {
+  padding-top: 6rem;
+  background-color: var(--bg-light-white);
+  padding-bottom: 8rem;
+}
+#contact .title {
+  color: var(--text-black);
+  margin-bottom: 7rem;
+  font-size: 4rem;
+  text-align: center;
+}
+#contact .title::before {
+  content: "";
+  position: absolute;
+  width: 15rem;
+  height: 3px;
+  bottom: -1.3rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1.5px;
+  background-color: var(--bg-danger);
+}
+#contact .contact-info h3 {
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--text-danger);
+}
+
+#contact .contact-info p {
+  font-size: 1.7rem;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+#contact .contact-info p i {
+  font-size: 3rem;
+  color: var(--text-danger);
+}
+
+#contact .contact-form h3 {
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--text-danger);
+}
+#contact .contact-form .form-group input,
+#contact .contact-form .form-group textarea {
+  border-radius: 2px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--text-grey);
+}
+
+#contact .contact-form .form-group input:focus,
+#contact .contact-form .form-group textarea:focus {
+  border: 2px solid var(--text-dark-grey);
+  box-shadow: none;
+}
+#contact .contact-form .form-group textarea {
+  height: 15rem;
+  resize: none;
+  border-radius: 2px;
+}
+
+#contact .contact-form button {
+  font-size: 1.7rem;
+  font-weight: 500;
+  border-radius: 2px;
+  padding: 0.6rem 3.2rem;
+  background-color: var(--bg-danger);
+  color: var(--text-white);
+  border: 2px solid var(--bg-danger);
+  transition: 0.3s ease-in-out;
+}
+
+#contact .contact-form button:hover {
+  background-color: transparent;
+  color: var(--text-danger);
+}
+
+/* Footer Section */
+.footer {
+  background-color: var(--bg-danger);
+  position: relative;
+}
+
+.footer p {
+  color: var(--text-white);
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+/* Scroll  up */
+.footer #scrollup a i {
+  position: absolute;
+  top: -6rem;
+  right: 2rem;
+  font-size: 3rem;
+  padding: 0.6rem 1.1rem;
+  border-radius: 2px;
+  color: var(--text-white);
+  background-color: var(--bg-danger);
+  transition: 0.4s ease-in-out;
+  -webkit-transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.footer #scrollup a i:hover {
+  box-shadow: 0 3px 13px 0 var(--text-grey);
+}
